@@ -12,8 +12,8 @@ class GuessingGame {
     }
 
     guess() {
-        console.log((this.maxRange - this.minRange)/2^0 + this.minRange);
-        return ((this.maxRange - this.minRange)/2^0 + this.minRange);
+        console.log( Math.ceil(this.minRange + (this.maxRange - this.minRange) / 2));
+        return Math.ceil(this.minRange + (this.maxRange - this.minRange) / 2);
     }
 
     lower() {
